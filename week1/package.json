@@ -1,0 +1,15 @@
+{
+  "name": "se373",
+  "version": "1.0.0",
+  "description": "Assignment 1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AJ Saporito",
+  "license": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
