@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
+const db = mongoose.connection;
 const mongoURI = "mongodb://localhost:27017/Empl";
 mongoose.connect(mongoURI);
-const db = mongoose.connection;
 
 db.once('open', () => {
   console.log("Connected to MongoDB.");
