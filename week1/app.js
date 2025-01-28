@@ -8,25 +8,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-const readFile = (path) => {
-  return new Promise((resolve, reject) => {
-    fs.readFile(path, 'utf8', (err, data) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(data);
-      }
-    });
-  });
-};
-
 app.get('/index', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/todo', async (req, res) => {
-  let data = await readFile('data/todo.json');
-  res.send(JSON.parse(data));
+app.get('/todo', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'todo.json'));
 });
 
 app.get('/read-todo', (req, res) => {

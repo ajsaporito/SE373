@@ -1,0 +1,17 @@
+{
+  "name": "crud-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "AJ Saporito",
+  "description": "A NodeJS CRUD application",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "mongoose": "^8.9.5",
+    "nodemon": "^3.1.9"
+  }
+}
