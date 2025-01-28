@@ -42,7 +42,7 @@ app.get('/update/:id', async (req, res) => {
 });
 
 app.get('/delete', async (req, res) => {
-  const { firstName, lastName} = req.query;
+  const { firstName, lastName } = req.query;
   
   if (!firstName || !lastName) {
     return res.status(400).send("Bad request.");
