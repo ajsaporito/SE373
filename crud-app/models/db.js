@@ -8,7 +8,7 @@ db.once('open', () => {
 });
 
 db.on('error', (error) => {
-  console.error('MongoDB connection error:', error);
+  console.error("MongoDB connection error:", error);
 });
 
 module.exports = db;

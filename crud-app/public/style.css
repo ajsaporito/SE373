@@ -16,7 +16,6 @@ body {
   padding: 1rem; 
   position: sticky; 
   top: 0;
-  z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -113,10 +112,6 @@ th {
   cursor: pointer;
 }
 
-.update-btn button:hover {
-  background-color: #0056b3;
-}
-
 .delete-btn {
   padding: 5px 10px;
   background-color: #dc3545;
@@ -124,9 +119,6 @@ th {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-}
-.update-btn button:hover {
-  background-color: #bd2130;
 }
 
 .form {

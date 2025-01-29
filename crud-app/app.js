@@ -41,7 +41,7 @@ app.get('/update/:id', async (req, res) => {
   })
 });
 
-app.get('/delete', async (req, res) => {
+app.get('/delete', (req, res) => {
   const { firstName, lastName } = req.query;
   
   if (!firstName || !lastName) {
@@ -61,5 +61,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("Server running on port 3000.");
+  console.log(`Server running on port ${PORT}.`);
 });
